@@ -1,0 +1,69 @@
+\hypertarget{cvm_stack_8h}{\section{src/cvm\-Stack.h File Reference}
+\label{cvm_stack_8h}\index{src/cvm\-Stack.\-h@{src/cvm\-Stack.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}cvm\-Types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}cvm\-Errors.\-h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8h_a9fe289d76b37e35577b065640539d8bc}{Cvm\-New\-Stack} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
+\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8h_ac21cebea4878cfbe3bbcaf6261548472}{Cvm\-Free\-Stack} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
+\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8h_ab74f759234a988c2b608fb492521fb6b}{Cvm\-Push} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s, \hyperlink{cvm_types_8h_a53f56afae5106d482ea7690891c4b668}{cvm\-Word} w)
+\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8h_ab18c80e99469eb290511d6fbcfa99c90}{Cvm\-Pop} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} p, \hyperlink{cvm_types_8h_a53f56afae5106d482ea7690891c4b668}{cvm\-Word} $\ast$w)
+\item 
+\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} \hyperlink{cvm_stack_8h_ab6382c242f66725280b437162df513f1}{read} (F\-I\-L\-E $\ast$)
+\item 
+void \hyperlink{cvm_stack_8h_aa2384fb2c69a74db231f5db84b60fe3a}{write} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp}, F\-I\-L\-E $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{cvm_stack_8h_ac21cebea4878cfbe3bbcaf6261548472}{\index{cvm\-Stack.\-h@{cvm\-Stack.\-h}!Cvm\-Free\-Stack@{Cvm\-Free\-Stack}}
+\index{Cvm\-Free\-Stack@{Cvm\-Free\-Stack}!cvmStack.h@{cvm\-Stack.\-h}}
+\subsubsection[{Cvm\-Free\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Free\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8h_ac21cebea4878cfbe3bbcaf6261548472}
+\hypertarget{cvm_stack_8h_a9fe289d76b37e35577b065640539d8bc}{\index{cvm\-Stack.\-h@{cvm\-Stack.\-h}!Cvm\-New\-Stack@{Cvm\-New\-Stack}}
+\index{Cvm\-New\-Stack@{Cvm\-New\-Stack}!cvmStack.h@{cvm\-Stack.\-h}}
+\subsubsection[{Cvm\-New\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-New\-Stack (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8h_a9fe289d76b37e35577b065640539d8bc}
+\hypertarget{cvm_stack_8h_ab18c80e99469eb290511d6fbcfa99c90}{\index{cvm\-Stack.\-h@{cvm\-Stack.\-h}!Cvm\-Pop@{Cvm\-Pop}}
+\index{Cvm\-Pop@{Cvm\-Pop}!cvmStack.h@{cvm\-Stack.\-h}}
+\subsubsection[{Cvm\-Pop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Pop (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{p, }
+\item[{{\bf cvm\-Word} $\ast$}]{w}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8h_ab18c80e99469eb290511d6fbcfa99c90}
+\hypertarget{cvm_stack_8h_ab74f759234a988c2b608fb492521fb6b}{\index{cvm\-Stack.\-h@{cvm\-Stack.\-h}!Cvm\-Push@{Cvm\-Push}}
+\index{Cvm\-Push@{Cvm\-Push}!cvmStack.h@{cvm\-Stack.\-h}}
+\subsubsection[{Cvm\-Push}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Push (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s, }
+\item[{{\bf cvm\-Word}}]{w}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8h_ab74f759234a988c2b608fb492521fb6b}
+\hypertarget{cvm_stack_8h_ab6382c242f66725280b437162df513f1}{\index{cvm\-Stack.\-h@{cvm\-Stack.\-h}!read@{read}}
+\index{read@{read}!cvmStack.h@{cvm\-Stack.\-h}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Stackp} read (
+\begin{DoxyParamCaption}
+\item[{F\-I\-L\-E $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8h_ab6382c242f66725280b437162df513f1}
+\hypertarget{cvm_stack_8h_aa2384fb2c69a74db231f5db84b60fe3a}{\index{cvm\-Stack.\-h@{cvm\-Stack.\-h}!write@{write}}
+\index{write@{write}!cvmStack.h@{cvm\-Stack.\-h}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void write (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{, }
+\item[{F\-I\-L\-E $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8h_aa2384fb2c69a74db231f5db84b60fe3a}

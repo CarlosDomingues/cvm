@@ -1,0 +1,128 @@
+\hypertarget{cvm_tests_8h}{\section{src/cvm\-Tests.h File Reference}
+\label{cvm_tests_8h}\index{src/cvm\-Tests.\-h@{src/cvm\-Tests.\-h}}
+}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}cvm\-Errors.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{cvm_tests_8h_a137aa83ec74421d226a90c92ec032ac9}{K\-N\-R\-M}~\char`\"{}\textbackslash{}x1\-B\mbox{[}0m\char`\"{}
+\item 
+\#define \hyperlink{cvm_tests_8h_a66290957baed5df3930ada4cb8caccf1}{K\-R\-E\-D}~\char`\"{}\textbackslash{}x1\-B\mbox{[}31m\char`\"{}
+\item 
+\#define \hyperlink{cvm_tests_8h_ac081c83b067273757f7a2e54a5957d41}{K\-G\-R\-N}~\char`\"{}\textbackslash{}x1\-B\mbox{[}32m\char`\"{}
+\item 
+\#define \hyperlink{cvm_tests_8h_a80fc734dc4cafcbf9534791a0df7a3cf}{K\-Y\-L\-W}~\char`\"{}\textbackslash{}x1\-B\mbox{[}33m\char`\"{}
+\item 
+\#define \hyperlink{cvm_tests_8h_a32036c94dbb166a3f874b7efc169841f}{K\-C\-Y\-N}~\char`\"{}\textbackslash{}x1\-B\mbox{[}36m\char`\"{}
+\item 
+\#define \hyperlink{cvm_tests_8h_a98ffe5e76d36abe15a07d593b2c95c5d}{\-\_\-test\-\_\-start}(function\-Name)
+\item 
+\#define \hyperlink{cvm_tests_8h_a0f7bfe37fa67c663afd7b393577cd9b2}{\-\_\-it\-\_\-should}(message, test)
+\item 
+\#define \hyperlink{cvm_tests_8h_aa137b3401d57f3f47881411fff111467}{\-\_\-run\-\_\-test}(test)~do \{ test();\} while (0)
+\item 
+\#define \hyperlink{cvm_tests_8h_adcb9aeec9653a3307069ee575a45d3dd}{\-\_\-test\-\_\-result}()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{cvm_tests_8h_a91aa4203331e915f2d20dd26579791ee}{tests\-\_\-run} = 0
+\item 
+int \hyperlink{cvm_tests_8h_a13d58aef58965a27953a478f8370dc99}{functions\-\_\-run} =0
+\item 
+int \hyperlink{cvm_tests_8h_ac416cbab22199a47838dc6de83be2b25}{tests\-\_\-failed} =0
+\item 
+int \hyperlink{cvm_tests_8h_abf0c823d1963d8f0376e85f1b4973fb5}{tests\-\_\-passed} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{cvm_tests_8h_a0f7bfe37fa67c663afd7b393577cd9b2}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!\-\_\-it\-\_\-should@{\-\_\-it\-\_\-should}}
+\index{\-\_\-it\-\_\-should@{\-\_\-it\-\_\-should}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{\-\_\-it\-\_\-should}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-it\-\_\-should(
+\begin{DoxyParamCaption}
+\item[{}]{message, }
+\item[{}]{test}
+\end{DoxyParamCaption}
+)}}\label{cvm_tests_8h_a0f7bfe37fa67c663afd7b393577cd9b2}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        if (!(test))\{\(\backslash\)
+            printf(\hyperlink{cvm_tests_8h_a66290957baed5df3930ada4cb8caccf1}{KRED} \textcolor{stringliteral}{"**FAIL**: %s"} \hyperlink{cvm_tests_8h_a137aa83ec74421d226a90c92ec032ac9}{KNRM} \textcolor{stringliteral}{"\(\backslash\)n"}, message);\hyperlink{cvm_tests_8h_ac416cbab22199a47838dc6de83be2b25}{\(\backslash\)}
+\hyperlink{cvm_tests_8h_ac416cbab22199a47838dc6de83be2b25}{             tests\_failed}++;\(\backslash\)
+        \} \textcolor{keywordflow}{else} \{\(\backslash\)
+            printf(\hyperlink{cvm_tests_8h_ac081c83b067273757f7a2e54a5957d41}{KGRN} \textcolor{stringliteral}{"**PASS**: %s"} \hyperlink{cvm_tests_8h_a137aa83ec74421d226a90c92ec032ac9}{KNRM} \textcolor{stringliteral}{"\(\backslash\)n"}, message); \hyperlink{cvm_tests_8h_abf0c823d1963d8f0376e85f1b4973fb5}{tests\_passed}++;\(\backslash\)
+        \}\hyperlink{cvm_tests_8h_a91aa4203331e915f2d20dd26579791ee}{\(\backslash\)}
+\hyperlink{cvm_tests_8h_a91aa4203331e915f2d20dd26579791ee}{        tests\_run}++;\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\hypertarget{cvm_tests_8h_aa137b3401d57f3f47881411fff111467}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!\-\_\-run\-\_\-test@{\-\_\-run\-\_\-test}}
+\index{\-\_\-run\-\_\-test@{\-\_\-run\-\_\-test}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{\-\_\-run\-\_\-test}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-run\-\_\-test(
+\begin{DoxyParamCaption}
+\item[{}]{test}
+\end{DoxyParamCaption}
+)~do \{ test();\} while (0)}}\label{cvm_tests_8h_aa137b3401d57f3f47881411fff111467}
+\hypertarget{cvm_tests_8h_adcb9aeec9653a3307069ee575a45d3dd}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!\-\_\-test\-\_\-result@{\-\_\-test\-\_\-result}}
+\index{\-\_\-test\-\_\-result@{\-\_\-test\-\_\-result}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{\-\_\-test\-\_\-result}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-test\-\_\-result(
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{cvm_tests_8h_adcb9aeec9653a3307069ee575a45d3dd}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        printf(\textcolor{stringliteral}{"\(\backslash\)n"} \hyperlink{cvm_tests_8h_a80fc734dc4cafcbf9534791a0df7a3cf}{KYLW} \textcolor{stringliteral}{"----Test Result: %d tests executed in %d functions,"}
+      \hyperlink{cvm_tests_8h_ac081c83b067273757f7a2e54a5957d41}{KGRN}\textcolor{stringliteral}{" %d passed "}\hyperlink{cvm_tests_8h_a80fc734dc4cafcbf9534791a0df7a3cf}{KYLW}\textcolor{stringliteral}{","}\hyperlink{cvm_tests_8h_a66290957baed5df3930ada4cb8caccf1}{KRED}\textcolor{stringliteral}{" %d failed"}\hyperlink{cvm_tests_8h_a80fc734dc4cafcbf9534791a0df7a3cf}{KYLW}\textcolor{stringliteral}{" ----"} \hyperlink{cvm_tests_8h_a137aa83ec74421d226a90c92ec032ac9}{KNRM} \textcolor{stringliteral}{"\(\backslash\)n"}, 
+      \hyperlink{cvm_tests_8h_a91aa4203331e915f2d20dd26579791ee}{tests\_run}, \hyperlink{cvm_tests_8h_a13d58aef58965a27953a478f8370dc99}{functions\_run}, \hyperlink{cvm_tests_8h_abf0c823d1963d8f0376e85f1b4973fb5}{tests\_passed}, 
+      \hyperlink{cvm_tests_8h_ac416cbab22199a47838dc6de83be2b25}{tests\_failed});\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\hypertarget{cvm_tests_8h_a98ffe5e76d36abe15a07d593b2c95c5d}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!\-\_\-test\-\_\-start@{\-\_\-test\-\_\-start}}
+\index{\-\_\-test\-\_\-start@{\-\_\-test\-\_\-start}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{\-\_\-test\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}\#define \-\_\-test\-\_\-start(
+\begin{DoxyParamCaption}
+\item[{}]{function\-Name}
+\end{DoxyParamCaption}
+)}}\label{cvm_tests_8h_a98ffe5e76d36abe15a07d593b2c95c5d}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do} \{\(\backslash\)
+        printf(\textcolor{stringliteral}{"\(\backslash\)n"} \hyperlink{cvm_tests_8h_a80fc734dc4cafcbf9534791a0df7a3cf}{KYLW} \textcolor{stringliteral}{"----Testing Function: %s ----"} \hyperlink{cvm_tests_8h_a137aa83ec74421d226a90c92ec032ac9}{KNRM} \textcolor{stringliteral}{"\(\backslash\)n"}, functionName);
+      \hyperlink{cvm_tests_8h_a13d58aef58965a27953a478f8370dc99}{\(\backslash\)}
+\hyperlink{cvm_tests_8h_a13d58aef58965a27953a478f8370dc99}{        functions\_run}++;\(\backslash\)
+    \} \textcolor{keywordflow}{while} (0)
+\end{DoxyCode}
+\hypertarget{cvm_tests_8h_a32036c94dbb166a3f874b7efc169841f}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!K\-C\-Y\-N@{K\-C\-Y\-N}}
+\index{K\-C\-Y\-N@{K\-C\-Y\-N}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{K\-C\-Y\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\-C\-Y\-N~\char`\"{}\textbackslash{}x1\-B\mbox{[}36m\char`\"{}}}\label{cvm_tests_8h_a32036c94dbb166a3f874b7efc169841f}
+\hypertarget{cvm_tests_8h_ac081c83b067273757f7a2e54a5957d41}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!K\-G\-R\-N@{K\-G\-R\-N}}
+\index{K\-G\-R\-N@{K\-G\-R\-N}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{K\-G\-R\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\-G\-R\-N~\char`\"{}\textbackslash{}x1\-B\mbox{[}32m\char`\"{}}}\label{cvm_tests_8h_ac081c83b067273757f7a2e54a5957d41}
+\hypertarget{cvm_tests_8h_a137aa83ec74421d226a90c92ec032ac9}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!K\-N\-R\-M@{K\-N\-R\-M}}
+\index{K\-N\-R\-M@{K\-N\-R\-M}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{K\-N\-R\-M}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\-N\-R\-M~\char`\"{}\textbackslash{}x1\-B\mbox{[}0m\char`\"{}}}\label{cvm_tests_8h_a137aa83ec74421d226a90c92ec032ac9}
+\hypertarget{cvm_tests_8h_a66290957baed5df3930ada4cb8caccf1}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!K\-R\-E\-D@{K\-R\-E\-D}}
+\index{K\-R\-E\-D@{K\-R\-E\-D}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{K\-R\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\-R\-E\-D~\char`\"{}\textbackslash{}x1\-B\mbox{[}31m\char`\"{}}}\label{cvm_tests_8h_a66290957baed5df3930ada4cb8caccf1}
+\hypertarget{cvm_tests_8h_a80fc734dc4cafcbf9534791a0df7a3cf}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!K\-Y\-L\-W@{K\-Y\-L\-W}}
+\index{K\-Y\-L\-W@{K\-Y\-L\-W}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{K\-Y\-L\-W}]{\setlength{\rightskip}{0pt plus 5cm}\#define K\-Y\-L\-W~\char`\"{}\textbackslash{}x1\-B\mbox{[}33m\char`\"{}}}\label{cvm_tests_8h_a80fc734dc4cafcbf9534791a0df7a3cf}
+
+
+\subsection{Variable Documentation}
+\hypertarget{cvm_tests_8h_a13d58aef58965a27953a478f8370dc99}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!functions\-\_\-run@{functions\-\_\-run}}
+\index{functions\-\_\-run@{functions\-\_\-run}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{functions\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}int functions\-\_\-run =0}}\label{cvm_tests_8h_a13d58aef58965a27953a478f8370dc99}
+\hypertarget{cvm_tests_8h_ac416cbab22199a47838dc6de83be2b25}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!tests\-\_\-failed@{tests\-\_\-failed}}
+\index{tests\-\_\-failed@{tests\-\_\-failed}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{tests\-\_\-failed}]{\setlength{\rightskip}{0pt plus 5cm}int tests\-\_\-failed =0}}\label{cvm_tests_8h_ac416cbab22199a47838dc6de83be2b25}
+\hypertarget{cvm_tests_8h_abf0c823d1963d8f0376e85f1b4973fb5}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!tests\-\_\-passed@{tests\-\_\-passed}}
+\index{tests\-\_\-passed@{tests\-\_\-passed}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{tests\-\_\-passed}]{\setlength{\rightskip}{0pt plus 5cm}int tests\-\_\-passed =0}}\label{cvm_tests_8h_abf0c823d1963d8f0376e85f1b4973fb5}
+\hypertarget{cvm_tests_8h_a91aa4203331e915f2d20dd26579791ee}{\index{cvm\-Tests.\-h@{cvm\-Tests.\-h}!tests\-\_\-run@{tests\-\_\-run}}
+\index{tests\-\_\-run@{tests\-\_\-run}!cvmTests.h@{cvm\-Tests.\-h}}
+\subsubsection[{tests\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}int tests\-\_\-run = 0}}\label{cvm_tests_8h_a91aa4203331e915f2d20dd26579791ee}
