@@ -47,8 +47,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
+      <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -93,7 +95,7 @@ $(document).ready(function(){initNavTree('cvm_stack_8c.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,15 +120,91 @@ $(document).ready(function(){initNavTree('cvm_stack_8c.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9fe289d76b37e35577b065640539d8bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#a9fe289d76b37e35577b065640539d8bc">CvmNewStack</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s)</td></tr>
+<tr class="memdesc:a9fe289d76b37e35577b065640539d8bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new stack.  <a href="#a9fe289d76b37e35577b065640539d8bc">More...</a><br/></td></tr>
 <tr class="separator:a9fe289d76b37e35577b065640539d8bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac21cebea4878cfbe3bbcaf6261548472"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#ac21cebea4878cfbe3bbcaf6261548472">CvmFreeStack</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s)</td></tr>
+<tr class="memdesc:ac21cebea4878cfbe3bbcaf6261548472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees memory occupied by a stack.  <a href="#ac21cebea4878cfbe3bbcaf6261548472">More...</a><br/></td></tr>
 <tr class="separator:ac21cebea4878cfbe3bbcaf6261548472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab74f759234a988c2b608fb492521fb6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#ab74f759234a988c2b608fb492521fb6b">CvmPush</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s, <a class="el" href="cvm_types_8h.html#a53f56afae5106d482ea7690891c4b668">cvmWord</a> w)</td></tr>
+<tr class="memdesc:ab74f759234a988c2b608fb492521fb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a word into the stack.  <a href="#ab74f759234a988c2b608fb492521fb6b">More...</a><br/></td></tr>
 <tr class="separator:ab74f759234a988c2b608fb492521fb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b90b0acfb9cf59af7994abc99122a73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#a1b90b0acfb9cf59af7994abc99122a73">CvmPop</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s, <a class="el" href="cvm_types_8h.html#a53f56afae5106d482ea7690891c4b668">cvmWord</a> *w)</td></tr>
+<tr class="memdesc:a1b90b0acfb9cf59af7994abc99122a73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops a word from the stack.  <a href="#a1b90b0acfb9cf59af7994abc99122a73">More...</a><br/></td></tr>
 <tr class="separator:a1b90b0acfb9cf59af7994abc99122a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68d273e3ce47ecfa8e27eaefe55a75ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#a68d273e3ce47ecfa8e27eaefe55a75ff">CvmPeek</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s, <a class="el" href="cvm_types_8h.html#a53f56afae5106d482ea7690891c4b668">cvmWord</a> *w)</td></tr>
+<tr class="memdesc:a68d273e3ce47ecfa8e27eaefe55a75ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the object localized on the head, but without poping it.  <a href="#a68d273e3ce47ecfa8e27eaefe55a75ff">More...</a><br/></td></tr>
+<tr class="separator:a68d273e3ce47ecfa8e27eaefe55a75ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe9f034e06531a239e94e5a48e55e1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#aafe9f034e06531a239e94e5a48e55e1d">CvmAdd</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s)</td></tr>
+<tr class="memdesc:aafe9f034e06531a239e94e5a48e55e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops the topmost elements of the stack, adds them and push the result.  <a href="#aafe9f034e06531a239e94e5a48e55e1d">More...</a><br/></td></tr>
+<tr class="separator:aafe9f034e06531a239e94e5a48e55e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeeffa6e4c45d041acd46d773720b971"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#aeeeffa6e4c45d041acd46d773720b971">CvmMultiply</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s)</td></tr>
+<tr class="memdesc:aeeeffa6e4c45d041acd46d773720b971"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pops the topmost elements of the stack, multiplies them and push the result.  <a href="#aeeeffa6e4c45d041acd46d773720b971">More...</a><br/></td></tr>
+<tr class="separator:aeeeffa6e4c45d041acd46d773720b971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3fd82e5e48a35f1d7ef549a8b9bf437"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#ab3fd82e5e48a35f1d7ef549a8b9bf437">CvmSwap</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s)</td></tr>
+<tr class="memdesc:ab3fd82e5e48a35f1d7ef549a8b9bf437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps the two topmost elements of the stack.  <a href="#ab3fd82e5e48a35f1d7ef549a8b9bf437">More...</a><br/></td></tr>
+<tr class="separator:ab3fd82e5e48a35f1d7ef549a8b9bf437"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69779b613c6e7e0e7a4db868a65e5cb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#a69779b613c6e7e0e7a4db868a65e5cb5">CvmPrint</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s)</td></tr>
+<tr class="memdesc:a69779b613c6e7e0e7a4db868a65e5cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints all elements on the stack.  <a href="#a69779b613c6e7e0e7a4db868a65e5cb5">More...</a><br/></td></tr>
+<tr class="separator:a69779b613c6e7e0e7a4db868a65e5cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad2b1dbd780411d0be96bc6b0fd22e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#a2ad2b1dbd780411d0be96bc6b0fd22e1">CvmNop</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s)</td></tr>
+<tr class="separator:a2ad2b1dbd780411d0be96bc6b0fd22e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57090dc684fbf5502dd5a7332d36dd72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cvm_stack_8c.html#a57090dc684fbf5502dd5a7332d36dd72">CvmDuplicate</a> (<a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a> s)</td></tr>
+<tr class="memdesc:a57090dc684fbf5502dd5a7332d36dd72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pushes a new element to the stack, which is equal to the curreny topmost object.  <a href="#a57090dc684fbf5502dd5a7332d36dd72">More...</a><br/></td></tr>
+<tr class="separator:a57090dc684fbf5502dd5a7332d36dd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="aafe9f034e06531a239e94e5a48e55e1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmAdd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pops the topmost elements of the stack, adds them and push the result. </p>
+<p>CvmAdd assigns memory [head-1] + memory[head -2] to memory[head -1].</p>
+<p>The head atribute is subsequently decreased.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK for success or cvmStackNeeds2Operands if the stack has only on or zero elements. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a57090dc684fbf5502dd5a7332d36dd72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmDuplicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pushes a new element to the stack, which is equal to the curreny topmost object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK for success, cvmStackEmpty if the stack has only one element or cvmStackOverflow if the stack is full. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac21cebea4878cfbe3bbcaf6261548472"></a>
 <div class="memitem">
 <div class="memproto">
@@ -140,6 +218,48 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Frees memory occupied by a stack. </p>
+<p>CvmFreeStack frees the memory used in a stack by doing the following:</p>
+<ul>
+<li>Sets head to zero.</li>
+<li>Frees all memory used in the memory pointer</li>
+<li>Sets current_size to one.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>cvmOK for success. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeeeffa6e4c45d041acd46d773720b971"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmMultiply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pops the topmost elements of the stack, multiplies them and push the result. </p>
+<p>CvmAdd assigns memory [head-1] * memory[head -2] to memory[head -1].</p>
+<p>The head atribute is subsequently decreased.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK for success or cvmStackNeeds2Operands if the stack has only on or zero elements. </dd></dl>
 
 </div>
 </div>
@@ -157,17 +277,48 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Initializes a new stack. </p>
+<p>CvmNewStack initializes the internal structure of a new stack by doing the following:</p>
+<ul>
+<li>Sets head to zero.</li>
+<li>Dynamically allocates MEMORY_SIZE words to the memory atribute.</li>
+<li>Sets current_size to one.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>an unitialized <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK for success. </dd></dl>
+
 </div>
 </div>
-<a class="anchor" id="a1b90b0acfb9cf59af7994abc99122a73"></a>
+<a class="anchor" id="a2ad2b1dbd780411d0be96bc6b0fd22e1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmPop </td>
+          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmNop </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a>&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a68d273e3ce47ecfa8e27eaefe55a75ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmPeek </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -182,6 +333,79 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the object localized on the head, but without poping it. </p>
+<p>CvmPeek copies the memory[head-1] element from the stack to w. The head atribute is NOT decreased by one after the operation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+    <tr><td class="paramname">w</td><td>a cvmWord variable. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK if there's no problem or cvmStackEmpty if the stack is empty. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b90b0acfb9cf59af7994abc99122a73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmPop </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a>&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cvm_types_8h.html#a53f56afae5106d482ea7690891c4b668">cvmWord</a> *&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pops a word from the stack. </p>
+<p>CvmPop copies the memory[head-1] element from the stack to w. The head atribute will be decreased by one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+    <tr><td class="paramname">w</td><td>a cvmWord integer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK if there's no problem or cvmStackEmpty if the stack is empty. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a69779b613c6e7e0e7a4db868a65e5cb5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmPrint </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints all elements on the stack. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK for success or cvmStackEmpty if there are no elements on the stack. </dd></dl>
 
 </div>
 </div>
@@ -209,6 +433,42 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Pushes a word into the stack. </p>
+<p>CvmPush takes a cvmWord parameter and adds it to the top of the stack, which is memory[head]. Head is increased by one afterwards.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+    <tr><td class="paramname">w</td><td>a cvmWord integer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK if there's no problem or cvmStackOverflow if the stack is full. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab3fd82e5e48a35f1d7ef549a8b9bf437"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cvm_errors_8h.html#a4d2af3e245379f1e4f95b91fd9c14d4b">cvmErrorType</a> CvmSwap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cvm_types_8h.html#a01f558684bf6882b3c55600ea89397e2">cvmStackp</a>&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Swaps the two topmost elements of the stack. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>a <a class="el" href="structcvm_stack.html">cvmStack</a> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a cvmOK for success or cvmStackNeeds2Operands if the stack has only on or zero elements. </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -217,7 +477,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="cvm_stack_8c.html">cvmStack.c</a></li>
-    <li class="footer">Generated on Fri Jul 29 2016 01:47:23 for CVM by
+    <li class="footer">Generated on Sat Jul 30 2016 17:43:21 for CVM by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

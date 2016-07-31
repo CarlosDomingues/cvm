@@ -7,15 +7,13 @@
 
 var indexSectionsWithContent =
 {
-  0: "_cfhkmortw",
+  0: "bchm",
   1: "c",
   2: "c",
-  3: "cmrw",
-  4: "cfhmt",
+  3: "c",
+  4: "chm",
   5: "c",
-  6: "c",
-  7: "c",
-  8: "_kmo"
+  6: "bm"
 };
 
 var indexSectionNames =
@@ -26,9 +24,7 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "typedefs",
-  6: "enums",
-  7: "enumvalues",
-  8: "defines"
+  6: "pages"
 };
 
 function convertToId(search)

@@ -10,16 +10,72 @@
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_a9fe289d76b37e35577b065640539d8bc}{Cvm\-New\-Stack} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes a new stack. \end{DoxyCompactList}\item 
 \hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_ac21cebea4878cfbe3bbcaf6261548472}{Cvm\-Free\-Stack} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
-\item 
+\begin{DoxyCompactList}\small\item\em Frees memory occupied by a stack. \end{DoxyCompactList}\item 
 \hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_ab74f759234a988c2b608fb492521fb6b}{Cvm\-Push} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s, \hyperlink{cvm_types_8h_a53f56afae5106d482ea7690891c4b668}{cvm\-Word} w)
-\item 
+\begin{DoxyCompactList}\small\item\em Pushes a word into the stack. \end{DoxyCompactList}\item 
 \hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_a1b90b0acfb9cf59af7994abc99122a73}{Cvm\-Pop} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s, \hyperlink{cvm_types_8h_a53f56afae5106d482ea7690891c4b668}{cvm\-Word} $\ast$w)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Pops a word from the stack. \end{DoxyCompactList}\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_a68d273e3ce47ecfa8e27eaefe55a75ff}{Cvm\-Peek} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s, \hyperlink{cvm_types_8h_a53f56afae5106d482ea7690891c4b668}{cvm\-Word} $\ast$w)
+\begin{DoxyCompactList}\small\item\em Returns the object localized on the head, but without poping it. \end{DoxyCompactList}\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_aafe9f034e06531a239e94e5a48e55e1d}{Cvm\-Add} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
+\begin{DoxyCompactList}\small\item\em Pops the topmost elements of the stack, adds them and push the result. \end{DoxyCompactList}\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_aeeeffa6e4c45d041acd46d773720b971}{Cvm\-Multiply} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
+\begin{DoxyCompactList}\small\item\em Pops the topmost elements of the stack, multiplies them and push the result. \end{DoxyCompactList}\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_ab3fd82e5e48a35f1d7ef549a8b9bf437}{Cvm\-Swap} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
+\begin{DoxyCompactList}\small\item\em Swaps the two topmost elements of the stack. \end{DoxyCompactList}\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_a69779b613c6e7e0e7a4db868a65e5cb5}{Cvm\-Print} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
+\begin{DoxyCompactList}\small\item\em Prints all elements on the stack. \end{DoxyCompactList}\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_a2ad2b1dbd780411d0be96bc6b0fd22e1}{Cvm\-Nop} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
+\item 
+\hyperlink{cvm_errors_8h_a4d2af3e245379f1e4f95b91fd9c14d4b}{cvm\-Error\-Type} \hyperlink{cvm_stack_8c_a57090dc684fbf5502dd5a7332d36dd72}{Cvm\-Duplicate} (\hyperlink{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{cvm\-Stackp} s)
+\begin{DoxyCompactList}\small\item\em Pushes a new element to the stack, which is equal to the curreny topmost object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Function Documentation}
+\hypertarget{cvm_stack_8c_aafe9f034e06531a239e94e5a48e55e1d}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Add@{Cvm\-Add}}
+\index{Cvm\-Add@{Cvm\-Add}!cvmStack.c@{cvm\-Stack.\-c}}
+\subsubsection[{Cvm\-Add}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Add (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8c_aafe9f034e06531a239e94e5a48e55e1d}
+
+
+Pops the topmost elements of the stack, adds them and push the result. 
+
+Cvm\-Add assigns memory \mbox{[}head-\/1\mbox{]} + memory\mbox{[}head -\/2\mbox{]} to memory\mbox{[}head -\/1\mbox{]}.
+
+The head atribute is subsequently decreased.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K for success or cvm\-Stack\-Needs2\-Operands if the stack has only on or zero elements. 
+\end{DoxyReturn}
+\hypertarget{cvm_stack_8c_a57090dc684fbf5502dd5a7332d36dd72}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Duplicate@{Cvm\-Duplicate}}
+\index{Cvm\-Duplicate@{Cvm\-Duplicate}!cvmStack.c@{cvm\-Stack.\-c}}
+\subsubsection[{Cvm\-Duplicate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Duplicate (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8c_a57090dc684fbf5502dd5a7332d36dd72}
+
+
+Pushes a new element to the stack, which is equal to the curreny topmost object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K for success, cvm\-Stack\-Empty if the stack has only one element or cvm\-Stack\-Overflow if the stack is full. 
+\end{DoxyReturn}
 \hypertarget{cvm_stack_8c_ac21cebea4878cfbe3bbcaf6261548472}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Free\-Stack@{Cvm\-Free\-Stack}}
 \index{Cvm\-Free\-Stack@{Cvm\-Free\-Stack}!cvmStack.c@{cvm\-Stack.\-c}}
 \subsubsection[{Cvm\-Free\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Free\-Stack (
@@ -27,6 +83,50 @@
 \item[{{\bf cvm\-Stackp}}]{s}
 \end{DoxyParamCaption}
 )}}\label{cvm_stack_8c_ac21cebea4878cfbe3bbcaf6261548472}
+
+
+Frees memory occupied by a stack. 
+
+Cvm\-Free\-Stack frees the memory used in a stack by doing the following\-:
+
+
+\begin{DoxyItemize}
+\item Sets head to zero.
+\item Frees all memory used in the memory pointer
+\item Sets current\-\_\-size to one.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+cvm\-O\-K for success. 
+\end{DoxyReturn}
+\hypertarget{cvm_stack_8c_aeeeffa6e4c45d041acd46d773720b971}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Multiply@{Cvm\-Multiply}}
+\index{Cvm\-Multiply@{Cvm\-Multiply}!cvmStack.c@{cvm\-Stack.\-c}}
+\subsubsection[{Cvm\-Multiply}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Multiply (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8c_aeeeffa6e4c45d041acd46d773720b971}
+
+
+Pops the topmost elements of the stack, multiplies them and push the result. 
+
+Cvm\-Add assigns memory \mbox{[}head-\/1\mbox{]} $\ast$ memory\mbox{[}head -\/2\mbox{]} to memory\mbox{[}head -\/1\mbox{]}.
+
+The head atribute is subsequently decreased.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K for success or cvm\-Stack\-Needs2\-Operands if the stack has only on or zero elements. 
+\end{DoxyReturn}
 \hypertarget{cvm_stack_8c_a9fe289d76b37e35577b065640539d8bc}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-New\-Stack@{Cvm\-New\-Stack}}
 \index{Cvm\-New\-Stack@{Cvm\-New\-Stack}!cvmStack.c@{cvm\-Stack.\-c}}
 \subsubsection[{Cvm\-New\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-New\-Stack (
@@ -34,14 +134,101 @@
 \item[{{\bf cvm\-Stackp}}]{s}
 \end{DoxyParamCaption}
 )}}\label{cvm_stack_8c_a9fe289d76b37e35577b065640539d8bc}
+
+
+Initializes a new stack. 
+
+Cvm\-New\-Stack initializes the internal structure of a new stack by doing the following\-:
+
+
+\begin{DoxyItemize}
+\item Sets head to zero.
+\item Dynamically allocates M\-E\-M\-O\-R\-Y\-\_\-\-S\-I\-Z\-E words to the memory atribute.
+\item Sets current\-\_\-size to one.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & an unitialized \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K for success. 
+\end{DoxyReturn}
+\hypertarget{cvm_stack_8c_a2ad2b1dbd780411d0be96bc6b0fd22e1}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Nop@{Cvm\-Nop}}
+\index{Cvm\-Nop@{Cvm\-Nop}!cvmStack.c@{cvm\-Stack.\-c}}
+\subsubsection[{Cvm\-Nop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Nop (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8c_a2ad2b1dbd780411d0be96bc6b0fd22e1}
+\hypertarget{cvm_stack_8c_a68d273e3ce47ecfa8e27eaefe55a75ff}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Peek@{Cvm\-Peek}}
+\index{Cvm\-Peek@{Cvm\-Peek}!cvmStack.c@{cvm\-Stack.\-c}}
+\subsubsection[{Cvm\-Peek}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Peek (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{p, }
+\item[{{\bf cvm\-Word} $\ast$}]{w}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8c_a68d273e3ce47ecfa8e27eaefe55a75ff}
+
+
+Returns the object localized on the head, but without poping it. 
+
+Cvm\-Peek copies the memory\mbox{[}head-\/1\mbox{]} element from the stack to w. The head atribute is N\-O\-T decreased by one after the operation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+{\em w} & a cvm\-Word variable. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K if there's no problem or cvm\-Stack\-Empty if the stack is empty. 
+\end{DoxyReturn}
 \hypertarget{cvm_stack_8c_a1b90b0acfb9cf59af7994abc99122a73}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Pop@{Cvm\-Pop}}
 \index{Cvm\-Pop@{Cvm\-Pop}!cvmStack.c@{cvm\-Stack.\-c}}
 \subsubsection[{Cvm\-Pop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Pop (
 \begin{DoxyParamCaption}
-\item[{{\bf cvm\-Stackp}}]{s, }
+\item[{{\bf cvm\-Stackp}}]{p, }
 \item[{{\bf cvm\-Word} $\ast$}]{w}
 \end{DoxyParamCaption}
 )}}\label{cvm_stack_8c_a1b90b0acfb9cf59af7994abc99122a73}
+
+
+Pops a word from the stack. 
+
+Cvm\-Pop copies the memory\mbox{[}head-\/1\mbox{]} element from the stack to w. The head atribute will be decreased by one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+{\em w} & a cvm\-Word integer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K if there's no problem or cvm\-Stack\-Empty if the stack is empty. 
+\end{DoxyReturn}
+\hypertarget{cvm_stack_8c_a69779b613c6e7e0e7a4db868a65e5cb5}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Print@{Cvm\-Print}}
+\index{Cvm\-Print@{Cvm\-Print}!cvmStack.c@{cvm\-Stack.\-c}}
+\subsubsection[{Cvm\-Print}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Print (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8c_a69779b613c6e7e0e7a4db868a65e5cb5}
+
+
+Prints all elements on the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K for success or cvm\-Stack\-Empty if there are no elements on the stack. 
+\end{DoxyReturn}
 \hypertarget{cvm_stack_8c_ab74f759234a988c2b608fb492521fb6b}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Push@{Cvm\-Push}}
 \index{Cvm\-Push@{Cvm\-Push}!cvmStack.c@{cvm\-Stack.\-c}}
 \subsubsection[{Cvm\-Push}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Push (
@@ -50,3 +237,38 @@
 \item[{{\bf cvm\-Word}}]{w}
 \end{DoxyParamCaption}
 )}}\label{cvm_stack_8c_ab74f759234a988c2b608fb492521fb6b}
+
+
+Pushes a word into the stack. 
+
+Cvm\-Push takes a cvm\-Word parameter and adds it to the top of the stack, which is memory\mbox{[}head\mbox{]}. Head is increased by one afterwards.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+{\em w} & a cvm\-Word integer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K if there's no problem or cvm\-Stack\-Overflow if the stack is full. 
+\end{DoxyReturn}
+\hypertarget{cvm_stack_8c_ab3fd82e5e48a35f1d7ef549a8b9bf437}{\index{cvm\-Stack.\-c@{cvm\-Stack.\-c}!Cvm\-Swap@{Cvm\-Swap}}
+\index{Cvm\-Swap@{Cvm\-Swap}!cvmStack.c@{cvm\-Stack.\-c}}
+\subsubsection[{Cvm\-Swap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Error\-Type} Cvm\-Swap (
+\begin{DoxyParamCaption}
+\item[{{\bf cvm\-Stackp}}]{s}
+\end{DoxyParamCaption}
+)}}\label{cvm_stack_8c_ab3fd82e5e48a35f1d7ef549a8b9bf437}
+
+
+Swaps the two topmost elements of the stack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & a \hyperlink{structcvm_stack}{cvm\-Stack} object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a cvm\-O\-K for success or cvm\-Stack\-Needs2\-Operands if the stack has only on or zero elements. 
+\end{DoxyReturn}

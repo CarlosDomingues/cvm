@@ -1,6 +1,11 @@
 \hypertarget{cvm_types_8h}{\section{src/cvm\-Types.h File Reference}
 \label{cvm_types_8h}\index{src/cvm\-Types.\-h@{src/cvm\-Types.\-h}}
 }
+
+
+Custom types used in C\-V\-M.  
+
+
 {\ttfamily \#include $<$stdint.\-h$>$}\\*
 \subsection*{Data Structures}
 \begin{DoxyCompactItemize}
@@ -16,10 +21,21 @@ typedef \hyperlink{structcvm_stack}{cvm\-Stack} $\ast$ \hyperlink{cvm_types_8h_a
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+Custom types used in C\-V\-M. This file contains helper custom types used in the C\-V\-M library. Custom types related to external interfaces are likely to be in other files. Types related to error handling will be at \hyperlink{cvm_errors_8h}{cvm\-Errors.\-h}
+
+\begin{DoxyAuthor}{Author}
+Carlos Felipe Domingues e Oliveira  \href{mailto:cfelipe.domingues@gmail.com}{\tt cfelipe.\-domingues@gmail.\-com} 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\hyperlink{bug__bug000002}{Bug}]No known bugs. \end{DoxyRefDesc}
+
+
 \subsection{Typedef Documentation}
 \hypertarget{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}{\index{cvm\-Types.\-h@{cvm\-Types.\-h}!cvm\-Stackp@{cvm\-Stackp}}
 \index{cvm\-Stackp@{cvm\-Stackp}!cvmTypes.h@{cvm\-Types.\-h}}
 \subsubsection[{cvm\-Stackp}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf cvm\-Stack}$\ast$ {\bf cvm\-Stackp}}}\label{cvm_types_8h_a01f558684bf6882b3c55600ea89397e2}
-\hypertarget{cvm_types_8h_a53f56afae5106d482ea7690891c4b668}{\index{cvm\-Types.\-h@{cvm\-Types.\-h}!cvm\-Word@{cvm\-Word}}
+Helper type to hold pointers to \hyperlink{structcvm_stack}{cvm\-Stack}. \hypertarget{cvm_types_8h_a53f56afae5106d482ea7690891c4b668}{\index{cvm\-Types.\-h@{cvm\-Types.\-h}!cvm\-Word@{cvm\-Word}}
 \index{cvm\-Word@{cvm\-Word}!cvmTypes.h@{cvm\-Types.\-h}}
 \subsubsection[{cvm\-Word}]{\setlength{\rightskip}{0pt plus 5cm}typedef int64\-\_\-t {\bf cvm\-Word}}}\label{cvm_types_8h_a53f56afae5106d482ea7690891c4b668}
+cvm\-Word represents a word in the Virtual Machine. This particular implementation uses 64-\/bit wide integers. The word size can be easily changed without any side effects on the rest of the program. 

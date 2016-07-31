@@ -1,6 +1,8 @@
 var NAVTREE =
 [
   [ "CVM", "index.html", [
+    [ "Main Page", "index.html", null ],
+    [ "Bug List", "bug.html", null ],
     [ "Data Structures", null, [
       [ "Data Structures", "annotated.html", "annotated" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -20,13 +22,14 @@ var NAVTREE =
         [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"_cvm_swap-example.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

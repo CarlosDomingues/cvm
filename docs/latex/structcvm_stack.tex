@@ -16,17 +16,20 @@ int \hyperlink{structcvm_stack_afb54d9f9368a5e14e68aa90ba2d53d40}{current\-\_\-s
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+\hyperlink{structcvm_stack}{cvm\-Stack} is a minimal implementation of a stack structure. A stack, also know as first in last out, is a vector-\/like data structure that only allows data to be stored or collected from the first address (known as head). 
+
 \subsection{Field Documentation}
 \hypertarget{structcvm_stack_afb54d9f9368a5e14e68aa90ba2d53d40}{\index{cvm\-Stack@{cvm\-Stack}!current\-\_\-size@{current\-\_\-size}}
 \index{current\-\_\-size@{current\-\_\-size}!cvmStack@{cvm\-Stack}}
 \subsubsection[{current\-\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int current\-\_\-size}}\label{structcvm_stack_afb54d9f9368a5e14e68aa90ba2d53d40}
-\hypertarget{structcvm_stack_a20358970b1abaf992eb85e071e454653}{\index{cvm\-Stack@{cvm\-Stack}!head@{head}}
+current\-\_\-size tells us how many blocks of M\-E\-M\-O\-R\-Y\-\_\-\-S\-I\-Z\-E a stack has. When initialized, its default value is 1. \hypertarget{structcvm_stack_a20358970b1abaf992eb85e071e454653}{\index{cvm\-Stack@{cvm\-Stack}!head@{head}}
 \index{head@{head}!cvmStack@{cvm\-Stack}}
 \subsubsection[{head}]{\setlength{\rightskip}{0pt plus 5cm}int head}}\label{structcvm_stack_a20358970b1abaf992eb85e071e454653}
-\hypertarget{structcvm_stack_a85478df6a4c8ac08ce55d50177351a65}{\index{cvm\-Stack@{cvm\-Stack}!memory@{memory}}
+The stack's head indicates the first free position on the stack. Hence if head = N, the head element will be at memory\mbox{[}head-\/1\mbox{]} \hypertarget{structcvm_stack_a85478df6a4c8ac08ce55d50177351a65}{\index{cvm\-Stack@{cvm\-Stack}!memory@{memory}}
 \index{memory@{memory}!cvmStack@{cvm\-Stack}}
 \subsubsection[{memory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cvm\-Word}$\ast$ memory}}\label{structcvm_stack_a85478df6a4c8ac08ce55d50177351a65}
-
+Memory is an array of words that contain the data itself. Memory size is controlled by the constant M\-E\-M\-O\-R\-Y\-\_\-\-S\-I\-Z\-E, which can be found at \hyperlink{cvm_config_8h}{cvm\-Config.\-h} 
 
 The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
 \item 

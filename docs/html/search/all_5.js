@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['main',['main',['../cvm_main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;cvmMain.c'],['../cvm_tests_8c.html#a3c04138a5bfe5d72780bb7e82a18e627',1,'main(int argc, char **argv):&#160;cvmTests.c']]],
-  ['memory',['memory',['../structcvm_stack.html#a85478df6a4c8ac08ce55d50177351a65',1,'cvmStack']]],
-  ['memory_5fsize',['MEMORY_SIZE',['../cvm_config_8h.html#a5ad3f75a4e38fd9bbed917c71ca4e9e0',1,'cvmConfig.h']]]
+  ['kcyn',['KCYN',['../cvm_tests_8h.html#a32036c94dbb166a3f874b7efc169841f',1,'cvmTests.h']]],
+  ['kgrn',['KGRN',['../cvm_tests_8h.html#ac081c83b067273757f7a2e54a5957d41',1,'cvmTests.h']]],
+  ['knrm',['KNRM',['../cvm_tests_8h.html#a137aa83ec74421d226a90c92ec032ac9',1,'cvmTests.h']]],
+  ['kred',['KRED',['../cvm_tests_8h.html#a66290957baed5df3930ada4cb8caccf1',1,'cvmTests.h']]],
+  ['kylw',['KYLW',['../cvm_tests_8h.html#a80fc734dc4cafcbf9534791a0df7a3cf',1,'cvmTests.h']]]
 ];

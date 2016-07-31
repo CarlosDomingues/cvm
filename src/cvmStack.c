@@ -12,7 +12,7 @@ cvmErrorType CvmNewStack(cvmStackp s) {
 	s->head = 0;
 	s->memory = malloc((MEMORY_SIZE) * sizeof(cvmWord));	      
 	s->current_size = 1;
-	
+
 	return cvmOK;
 }
 
@@ -24,13 +24,6 @@ cvmErrorType CvmFreeStack(cvmStackp s) {
 }
 
 cvmErrorType CvmPush(cvmStackp s, cvmWord w) {
-
-	/*
-	if (s->head == s->current_size) {
-		s->current_size += MEMORY_SIZE;
-		s->memory = realloc(s->memory, s->current_size * sizeof(cvmWord));
-	}
-	*/
 
 	if (s->head >= MEMORY_SIZE){
 		return cvmStackOverflow;
@@ -52,5 +45,103 @@ cvmErrorType CvmPop(cvmStackp s, cvmWord* w) {
 	return cvmOK;
 }
 
-//pek - read without pop
+cvmErrorType CvmPeek(cvmStackp s, cvmWord* w) {
+	  
+	if (s->head == 0) { 
+		return cvmStackEmpty;
+	}
 
+	*w = s->memory[(s->head) - 1];
+	  
+	return cvmOK;
+}
+
+
+cvmErrorType CvmAdd(cvmStackp s) {
+
+	if ((s->head == 0) || (s->head ==1)) { 
+		return cvmStackNeeds2Operands;
+	}
+
+	s->memory[(s->head) - 2] = s->memory[(s->head) - 1] + s->memory[(s->head) - 2];
+
+	s->head --;
+
+	return cvmOK;
+}
+
+
+cvmErrorType CvmMultiply(cvmStackp s) {
+
+	if ((s->head == 0) || (s->head ==1)) { 
+		return cvmStackNeeds2Operands;
+	}
+
+	s->memory[(s->head) - 2] = s->memory[(s->head) - 1] * s->memory[(s->head) - 2];
+
+	s->head --;
+
+	return cvmOK;
+}
+
+
+cvmErrorType CvmSwap(cvmStackp s) {
+
+	cvmWord REGA;
+	  
+	if ((s->head == 0) || (s->head ==1)) { 
+		return cvmStackNeeds2Operands;
+	}
+
+	REGA = s->memory[(s->head) - 1];
+
+	s->memory[(s->head) - 1] = s->memory[(s->head) - 2];
+
+	s->memory[(s->head) - 2] = REGA;
+
+	return cvmOK;
+}
+
+
+cvmErrorType CvmPrint(cvmStackp s){ 
+	  
+	int aux_counter = s->head;
+	
+	while(aux_counter > 0){
+		printf("%d\n", s->memory[aux_counter - 1]);
+		aux_counter--;
+	}
+
+	return cvmOK;
+}
+
+
+cvmErrorType CvmNop(cvmStackp s) {
+
+	//maybe should check for null pointer?
+
+	return cvmOK;
+}
+
+cvmErrorType CvmDuplicate(cvmStackp s){
+
+
+	if (s->head >= MEMORY_SIZE){
+		return cvmStackOverflow;
+	}
+
+	if (s->head == 0){
+		return cvmStackEmpty;
+	}
+
+
+	s->memory[(s->head)] = s->memory[(s->head) - 1];
+
+	s->head++;
+	
+	return cvmOK;
+}
+
+
+//multi N
+//ADD N

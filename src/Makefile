@@ -18,8 +18,8 @@ TEST_PATH = ../tests
 CC = gcc
 LD = gcc
 
-CFLAGS = -Wall
-LFLAGS = -Wall 
+CFLAGS = -Wall -Wextra -O3
+LFLAGS = -Wall -Wextra
 
 
 ##############################################
@@ -27,7 +27,7 @@ LFLAGS = -Wall
 ##############################################
 
 
-CVMMAINOBJS = cvmMain.o cvmStack.o cvmErrors.o
+CVMMAINOBJS = cvmMain.o cvmStack.o cvmErrors.o cvmCPU.o
 
 
 CVMTESTSOBJS = cvmTests.o cvmStack.o cvmErrors.o
